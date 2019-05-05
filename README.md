@@ -21,7 +21,7 @@
     <li>Touch Screen Interface</li>
     <li>Smoke Sensor</li>
     <li>Temperature Sensor</li>
-    <li>Weather Api</li>
+    <li>Weather API</li>
     <li>Door Sensor</li>
   </ul>
   
