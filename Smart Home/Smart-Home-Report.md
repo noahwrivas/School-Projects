@@ -175,7 +175,7 @@ According to the buzzer's datasheet, the buzzer may be modelled as a
 capacitor. The resistor in parallel with the buzzer is essential for
 charging and discharging the piezo buzzer.
 
-<img src="Images/Buzzer%20Driver%20Circuit.jpg" height="200">
+<img src="Images/Buzzer%20Driver%20Circuit.jpg" height="400">
 
 The two electromechanical relays, shown in figure 6, will be controlled
 via 1-bit signals from the primary microcomputer. The relays have
@@ -192,7 +192,7 @@ pull-down resistor is used to bring the signal to ground when the reed
 switch is open. When a magnetic field is introduced to the reed switch,
 the switch closes and the signal goes high.
 
-<img src="Images/relays.jpg" height="250">
+<img src="Images/relays.jpg" height="400">
 
 > *Figure 6 - Circuit diagram of an array of relays, and a reed switch*
 
@@ -296,7 +296,7 @@ bit is set high.
 
 <img src="Images/Buzzer%20Flow%20Chart.jpg">
 
-<img src="Images/Security%20Alarm%20Flow%20Chart.jpg" height="500">
+<img src="Images/Security%20Alarm%20Flow%20Chart.jpg">
 
 A WiFi network connection will be configured using the Raspberry Pi's
 network adapter. A weather data API will be invoked periodically with a
@@ -305,7 +305,7 @@ weather data. The data is parsed, and only the daily HI/LO temperature,
 current temperature, and current weather conditions will be displayed to
 the user. Figure 13 shows a detailed flowchart of the Web API.
 
-<img src="Images/Web%20API%20Flow%20Chart.jpg"
+<img src="Images/Web%20API%20Flow%20Chart.jpg">
 
 <hr>
 
