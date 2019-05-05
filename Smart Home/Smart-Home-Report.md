@@ -130,7 +130,7 @@ present.
 The sections below provide flow charts, circuit diagrams, and GUI
 layouts for the Smart Home Secure++.
 
-<img scr="Images/Block%20Diagram.jpg">
+<img src="Images/Block%20Diagram.jpg">
 
 *Figure 1 - Block diagram of the Smart Home Secure++*
 
@@ -148,7 +148,7 @@ converters, to get the ADC reading, then convert it to a temperature in
 Fahrenheit degrees. After conversion it will send the value as a string
 to the primary microcomputer, which will log the temperature and display
 the value. 
-<img src="Images/Digital%20serial%20figure.jpg" height="200">
+<img src="Images/Digital%20serial%20figure.jpg" height="300">
 
 <img src="Images/Smoke%20Detector%20Block%20Diagram.jpg" height="400">
 
