@@ -2,7 +2,7 @@
 
 **Milestone:** *Final Design Review*
 
-**Christian Arévalo, David Bone, Abeden El Kintaoui, Noah Rivas**
+**Noah Rivas, Christian Arévalo, David Bone, Abeden El Kintaoui**
 
 ECE 387
 
@@ -47,8 +47,6 @@ customizable as you'd like.
 Secure++ are:
 
 -   Smart Home Secure+ will remain online 24/7, consistently checking indoor temperature, updating local weather, and                                       monitoring door usage.
-
-
 
 -   The touchscreen LCD will be used to navigate simple menus to view the state of the home.
 
@@ -130,7 +128,7 @@ present.
 The sections below provide flow charts, circuit diagrams, and GUI
 layouts for the Smart Home Secure++.
 
-![](media/image16.png){width="6.5in" height="4.875in"}
+
 
 *Figure 1 - Block diagram of the Smart Home Secure++*
 
