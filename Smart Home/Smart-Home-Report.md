@@ -192,7 +192,7 @@ pull-down resistor is used to bring the signal to ground when the reed
 switch is open. When a magnetic field is introduced to the reed switch,
 the switch closes and the signal goes high.
 
-<img src="Images/Relay%20Circuit.jpg.jpg" height="500">
+<img src="Images/Relay%20Circuit.jpg" height="500">
 
 *Figure 6 - Circuit diagram of an array of relays, and a reed switch*
 
