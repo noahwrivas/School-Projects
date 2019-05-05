@@ -332,8 +332,7 @@ changes. The largest load would be when the thermistor goes to zero,
 which would not occur. Even under this extreme, the zener maintains a
 steady reference voltage. In addition to voltage stability, the
 simulation also provides power dissipation of the zener as shown in
-figure 15. ![](media/image9.png){width="4.919992344706912in"
-height="3.088542213473316in"}
+figure 15.
 
 <img src="Images/Regulator%20Sim.jpg">
 
