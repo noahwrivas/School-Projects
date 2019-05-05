@@ -1,0 +1,11 @@
+{
+  "zipcode": "13502",
+  "debounce": 200,
+  "relay1Pin": 23,
+  "myPass": "1234",
+  "fontStr": "Timeless.ttf",
+  "onPi": true,
+  "relay2Pin": 24,
+  "smokePin": 7,
+  "reedPin": 8
+}
