@@ -194,7 +194,7 @@ the switch closes and the signal goes high.
 
 <img src="Images/Relay%20Circuit.jpg" height="500">
 
-<img src="Images/Smoke%20Sensor%20Circuit.jpg" height="250">
+<img src="Images/Smoke%20Sensor%20Circuit.jpg" height="400">
 
 The smoke detection sensor will be implemented by using the LM339
 comparator, comparing the voltage coming out of the smoke sensor to a
