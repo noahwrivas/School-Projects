@@ -339,6 +339,8 @@ height="3.088542213473316in"}
 
 <img src="Images/Regulator%20Sim.jpg">
 
+<h4>Digital Results</h4>
+
 The buzzer circuit that was drawn in figure 5 shows how the buzzer acts
 as a capacitor. This means that the buzzer will have some value for its
 capacitance as well as a time constant because of the resistor in
@@ -350,8 +352,6 @@ time constant which determines the time needed to charge and discharge
 is also going to be extremely low, allowing for much higher frequencies
 that the primary microcontroller cannot
 supply.
-
-<img src="Images/buzzer%20Scope.jpg" height="250">
 
 The reed switch will interact with the magnet on the door and creates a
 short connecting to the microcontroller as well as a pulldown resistor.
@@ -368,7 +368,7 @@ vertical line with no curvature of the buzzer charging or discharging.
 This shows just how small the capacitance must be and how much noise is
 present.
 
-<img src="Images/buzzer%20Scope.jpg" height="250">
+<img src="Images/buzzer%20Scope.jpg" height="400">
 
 The current limiting resistor for the buzzer has a value of 1kჲ and will
 draw no more than 3.3mA at 3.3V. Which means that the maximum power
@@ -390,7 +390,7 @@ soldered with the appropriate connections to form a "hat" for the
 Raspberry Pi, as shown in image 1. On this circuit, the ATtiny is also
 interfaced with its appropriate connections.
 
-<img src="Images/perfboard.jpg" height="250">
+<img src="Images/perfboard.jpg" height="400">
 
 Raspberry Pi 3B+ documentation suggests the max current drawn
 simultaneously from all the GPIO should be under 50 mA for safe
@@ -437,7 +437,7 @@ where it is time stamped and stored to the SD card in a ".csv" file. The
 is updated in real time allowing the graph to update as more temperature
 data points are added, refer to screenshot 2.
 
-<img src="Images/temp%20plot.jpg" height="250">
+<img src="Images/temp%20plot.jpg" height="400">
 
 In addition to storing temperature data, user preferences and setting
 are saved in a ".json" file on the SD card. Preferences such as:
