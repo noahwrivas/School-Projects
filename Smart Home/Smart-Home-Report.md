@@ -309,6 +309,8 @@ the user. Figure 13 shows a detailed flowchart of the Web API.
 ![](media/image3.png){width="5.291666666666667in"
 height="3.4583333333333335in"}
 
+<hr>
+
 <h3>Results and Discussion</h3>
 
 Results are shown for each of the following sections: analog, digital,
@@ -453,6 +455,8 @@ This allows settings to be saved after the GUI program has been
 restarted. Certain settings, such as font, zip code, and pass code, can
 be adjusted in the GUI by the user. Other settings must be adjusted in
 the ".json" file directly.
+
+<hr>
 
 <h3>Lessons Learned</h3>
 
