@@ -1,15 +1,15 @@
 <h1>Smart Home Secure++</h1>
 
-<h3>**Milestone:** *Final Design Review*
+<h3>Milestone: Final Design Review
 
-**Noah Rivas, Christian Arévalo, David Bone, Abeden El Kintaoui**
-
+Noah Rivas, Christian Arévalo, David Bone, Abeden El Kintaoui
+</h3>
 ECE 387
 
 Spring 2019
 
 May 6, 2019
-</h3>
+
 <hr>
 
 <h3>Introduction and Project Objectives</h3>
@@ -59,7 +59,7 @@ digital and analog components, an interface with a microcomputer, and
 data collection with signal processing. Each element is vital in their
 own way and is explained as follows:
 
-*Digital Design:*\
+<h4>Digital Design:</h4>
 The secondary microcontroller provides access to multiple ADCs and a
 serial interface. The secondary microcontroller is essential for
 providing the unit with extensibility for additional sensors to be
@@ -78,7 +78,7 @@ such as: arm, disarm, security breach alarm, and smoke detected alarm.
 The device will provide a graphical user interface (GUI) with navigable
 menus via the touch screen.
 
-*Analog Design:*\
+<h4>Analog Design:</h4>
 The Smart Home Secure++ relies on analog devices for sensing the state
 of your home. Two sensors were implemented: thermistor for temperature
 sensing, and a smoke detector. A low-noise voltage regulator will be
@@ -90,7 +90,7 @@ signal. Likewise, a smoke detector module outputs a 0-5 Volts signal
 that corresponds to the amount of smoke around the device which will be
 compared to a predetermined threshold voltage with a comparator.
 
-*Interface with a Microcomputer:*\
+<h4>Interface with a Microcomputer:</h4>
 A primary microcontroller will drive the unit. A liquid crystal display
 (LCD) touchscreen will be connected via the GPIO pins for the
 touchscreen array and a high definition multimedia interface (HDMI)
@@ -109,7 +109,7 @@ GPIO pin on the primary microcontroller to provide auditory feedback. An
 input pin will be configured on the primary microcontroller to sense a
 doors state (open or closed).
 
-*Data Collection and Signal Processing:*\
+<h4>Data Collection and Signal Processing:</h4>
 The analog output signals from the temperature sensor will be read and
 processed in an ADC on a secondary microcontroller. The resulting
 digital data will be sent via serial communication and collected on a
@@ -139,7 +139,7 @@ into the following subsections: analog components, digital components,
 µCPU interface, and data collection with signal processing. Each
 subsection is outlined in the sections below.
 
-*Digital Design*
+<h4>Digital Design</h4>
 
 A serial connection will be made between the primary microcomputer and
 the secondary microcontroller. As shown in figure 2, the Raspberry Pi
@@ -195,7 +195,7 @@ the switch closes and the signal goes high.
 
 > *Figure 6 - Circuit diagram of an array of relays, and a reed switch*
 
-*Analog Design* ![](media/image7.png){width="4.208333333333333in"
+<h4>Analog Design</h4> ![](media/image7.png){width="4.208333333333333in"
 height="3.25in"}
 
 The smoke detection sensor will be implemented by using the LM339
@@ -228,8 +228,8 @@ height="2.0833333333333335in"}
 
 *thermistor and voltage regulator.*
 
-*Interface to
-Microcomputer*![](media/image13.png){width="4.687696850393701in"
+<h4>Interface to
+Microcomputer</h4>![](media/image13.png){width="4.687696850393701in"
 height="4.527777777777778in"}
 
 In figure 9 the schematic for the primary microcomputer, Raspberry Pi
@@ -248,7 +248,7 @@ pin assignments, connections to the temperature sensor, voltage
 regulator, and the serial connection. The ATTiny uses PortB (PB0-PB5) to
 configure and controls its bidirectional pins as outputs or inputs.
 
-*Data Collection and Signal Processing*
+<h4>Data Collection and Signal Processing</h4>
 
 When the secondary microcontroller is invoked by the primary via the
 polling scheme (see figure 2), the value will be read via the 10-bit ADC
@@ -309,14 +309,14 @@ the user. Figure 13 shows a detailed flowchart of the Web API.
 ![](media/image3.png){width="5.291666666666667in"
 height="3.4583333333333335in"}
 
-**Results and Discussion**
+<h3>Results and Discussion</h3>
 
 Results are shown for each of the following sections: analog, digital,
 interface to microcontroller, and signal
 processing.![](media/image19.png){width="5.333333333333333in"
 height="3.6666666666666665in"}
 
-*Analog Results*
+<h4>Analog Results</h4>
 
 Simulations were performed to predict the response due to known inputs.
 Smoke sensor was known to output a voltage above 0.5 volts when smoke
@@ -336,7 +336,7 @@ simulation also provides power dissipation of the zener as shown in
 figure 15. ![](media/image9.png){width="4.919992344706912in"
 height="3.088542213473316in"}
 
-*Digital Results:*
+<h4>Digital Results:</h4>
 
 The buzzer circuit that was drawn in figure 5 shows how the buzzer acts
 as a capacitor. This means that the buzzer will have some value for its
@@ -379,7 +379,7 @@ voltage across the resistor is 5V and the maximum current is 5mA.
 Therefore the power dissipated would be 25mW. The total power
 consumption of the entire buzzer circuit will be a safe 175mW.
 
-*Interface to Microcontroller
+<h4>Interface to Microcontroller</h4>
 Results*![](media/image20.png){width="3.46875in"
 height="2.5694444444444446in"}
 
@@ -420,7 +420,7 @@ in our design
 *Table 1 -* Rated and designed current specifications for pins used in
 the Smart Home Secure++ system on the Raspberry Pi 3B+.
 
-*Signal Processing Results*
+<h4>Signal Processing Results</h4>
 
 The web API used to collect weather data was the OpenWeatherMap weather
 API. The API allows you to request weather data from a specific zip
@@ -454,7 +454,7 @@ restarted. Certain settings, such as font, zip code, and pass code, can
 be adjusted in the GUI by the user. Other settings must be adjusted in
 the ".json" file directly.
 
-**Lessons Learned**
+<h3>Lessons Learned</h3>
 
 -   **Planning:** Although, we had a good plan to stay on track and meet
     > deadlines, we did have some unforeseen delays. Our Zener diodes
