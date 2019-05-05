@@ -1,4 +1,4 @@
-#**Smart Home Secure++**
+#Smart Home Secure++
 
 **Milestone:** *Final Design Review*
 
@@ -147,10 +147,10 @@ will poll the ATtiny, which is equipped with internal analog to digital
 converters, to get the ADC reading, then convert it to a temperature in
 Fahrenheit degrees. After conversion it will send the value as a string
 to the primary microcomputer, which will log the temperature and display
-the value. ![](media/image1.png){width="3.4895833333333335in"
-height="2.3055555555555554in"}
+the value. 
+![](Images/Digital%20serial%20figure.jpg)
 
-![](media/image11.png){width="4.375in" height="3.2777777777777777in"}
+![](Images/Smoke%20Detector%20Block%20Diagram.jpg){width="4.375in" height="3.2777777777777777in"}
 
 The smoke sensor produces a dc voltage ranging from 0-5 Volts. The smoke
 sensor voltage is compared with a pre-determined smoke threshold voltage
