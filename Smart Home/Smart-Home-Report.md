@@ -194,8 +194,6 @@ the switch closes and the signal goes high.
 
 <img src="Images/Relay%20Circuit.jpg" height="500">
 
-*Figure 6 - Circuit diagram of an array of relays, and a reed switch*
-
 <img src="Images/Smoke%20Sensor%20Circuit.jpg" height="250">
 
 The smoke detection sensor will be implemented by using the LM339
