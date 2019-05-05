@@ -10,6 +10,8 @@ Spring 2019
 
 May 6, 2019
 
+<hr>
+
 **Introduction and Project Objectives**
 
 Our homes are more than just four walls and a roof, it\'s a place to
@@ -37,28 +39,22 @@ home. Its simple extensibility also allows you to connect more
 appliances or sensors to your smart home easily, making your home as
 customizable as you'd like.
 
+<hr>
+
 **Methods/Technical Approach**
 
 *Specifications:* The high-level specifications for the Smart Home
 Secure++ are:
 
--   Smart Home Secure+ will remain online 24/7, consistently checking
-    > indoor temperature, updating local weather, and monitoring door
-    > usage.
+-   Smart Home Secure+ will remain online 24/7, consistently checking indoor temperature, updating local weather, and                                       monitoring door usage.
 
-<!-- -->
 
--   The touchscreen LCD will be used to navigate simple menus to view
-    > the state of the home.
 
--   Settings can be adjusted at will based on the user\'s preferences,
-    > such as font and font size, color scheme, local weather update
-    > frequency, indoor temperature update frequency, security
-    > passwords.
+-   The touchscreen LCD will be used to navigate simple menus to view the state of the home.
 
--   The device will require a network connection, providing the user
-    > with a means of automatically checking for and updating the local
-    > weather.
+-   Settings can be adjusted at will based on the user\'s preferences, such as font and font size, color scheme, local weather update frequency, indoor temperature update frequency, security passwords.
+
+-   The device will require a network connection, providing the user with a means of automatically checking for and updating the local weather.
 
 The Smart Home Secure++ satisfies the four project requirements by using
 digital and analog components, an interface with a microcomputer, and
