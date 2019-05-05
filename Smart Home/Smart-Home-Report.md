@@ -148,9 +148,9 @@ converters, to get the ADC reading, then convert it to a temperature in
 Fahrenheit degrees. After conversion it will send the value as a string
 to the primary microcomputer, which will log the temperature and display
 the value. 
-![](Images/Digital%20serial%20figure.jpg)
+![](Images/Digital%20serial%20figure.jpg){width = "5in"}
 
-![](Images/Smoke%20Detector%20Block%20Diagram.jpg){width="4.375in" height="3.2777777777777777in"}
+![](Images/Smoke%20Detector%20Block%20Diagram.jpg)
 
 The smoke sensor produces a dc voltage ranging from 0-5 Volts. The smoke
 sensor voltage is compared with a pre-determined smoke threshold voltage
