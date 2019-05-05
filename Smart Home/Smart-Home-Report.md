@@ -263,7 +263,7 @@ figure 8).
 Next, temperature is found using the simplified Steinhart--Hart equation
 for thermistors.
 
-<img src="Images/Temperature%20Calculation.jpg" width="500"
+<img src="Images/Temperature%20Calculation.jpg" width="500">
 
 Where, T is the measured temperature, T~0~ is the nominal temperature
 for the thermistor, B is the beta value for the thermistor,
