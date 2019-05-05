@@ -252,7 +252,7 @@ register. The 10-bit value will be converted into a voltage using the
 voltage divider principle. Then, the resistance value of the thermistor
 will be determined with the following formula:
 
-<img src="Images/RThermistor.jpg" width="500">
+<img src="Images/RThermistor.jpg" width="300">
 
 Where V<sub>ref</sub> is the analog reference voltage, ADC is a 10-bit register
 value, and R is the resistance value of the second resistor (see R2 in
@@ -261,7 +261,7 @@ figure 8).
 Next, temperature is found using the simplified Steinhart--Hart equation
 for thermistors.
 
-<img src="Images/Temperature%20Calculation.jpg" width="500">
+<img src="Images/Temperature%20Calculation.jpg" width="300">
 
 Where, T is the measured temperature, T<sub>0</sub> is the nominal temperature
 for the thermistor, B is the beta value for the thermistor,
