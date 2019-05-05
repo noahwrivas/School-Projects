@@ -192,11 +192,11 @@ pull-down resistor is used to bring the signal to ground when the reed
 switch is open. When a magnetic field is introduced to the reed switch,
 the switch closes and the signal goes high.
 
-<img src="Images/relays.jpg" height="400">
+<img src="Images/Relay%20Circuit.jpg.jpg" height="500">
 
-> *Figure 6 - Circuit diagram of an array of relays, and a reed switch*
+*Figure 6 - Circuit diagram of an array of relays, and a reed switch*
 
-<img src="Images/Smoke sensor circuit.jpg" height="250">
+<img src="Images/Smoke%20sensor%20circuit.jpg" height="250">
 
 The smoke detection sensor will be implemented by using the LM339
 comparator, comparing the voltage coming out of the smoke sensor to a
