@@ -164,7 +164,7 @@ input from the user. In figure 4, the graphical user interface (GUI) is
 shown. Each menu item displays data to the user or acquires data from
 the user. 
 
-<img src="Images/Menu%20Navigation.jpg" height="500">
+<img src="Images/Menu%20Navigation.jpg" height="600">
 
 The output devices will be controlled via binary signals. The buzzer
 will receive a square wave with a certain tone pertaining to each state:
