@@ -434,7 +434,7 @@ where it is time stamped and stored to the SD card in a ".csv" file. The
 is updated in real time allowing the graph to update as more temperature
 data points are added, refer to screenshot 2.
 
-<img src="Images/temp%20plot.jpg" height="400">
+<img src="Images/Temp%20Plot.jpg" height="400">
 
 In addition to storing temperature data, user preferences and setting
 are saved in a ".json" file on the SD card. Preferences such as:
