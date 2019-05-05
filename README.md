@@ -7,7 +7,7 @@
 <h3>Projects:</h3>
 
 <ul>
-  <li>Smart home</li>
+  <li><a href="https://github.com/noahwrivas/School-Projects/tree/master/Smart%20Home">Smart Home</a></li>
   <li>Senior Project 1</li>
   <li>Senior Project 2</li>
 </ul>
