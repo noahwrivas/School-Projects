@@ -11,9 +11,9 @@
   <li>Senior Project 1</li>
   <li>Senior Project 2</li>
 </ul>
+<hr>
 
 <h3>Smart Home</h3>
-
 <h4>Description:</h4>
 <p>The Smart Home was a junior project to replicate the now more common Amazon Alexa. This project took one entire semester (4 months) and cost me and my team less than $60 to create. There was a large amount of savings on smaller components because we had plenty lying around from other projects. The main purpose was to be an all in one security system with smart home capabilities. We were to include the following:
   
