@@ -5,9 +5,10 @@
 Noah Rivas, Christian Arévalo, David Bone, Abeden El Kintaoui
 </h3>
 ECE 387
-Spring 2019
-May 6, 2019
 
+Spring 2019
+
+May 6, 2019
 <hr>
 
 <h3>Introduction and Project Objectives</h3>
