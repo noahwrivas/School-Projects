@@ -254,7 +254,7 @@ will be determined with the following formula:
 
 <img src="Images/RThermistor.jpg" width="500">
 
-Where V~ref~ is the analog reference voltage, ADC is a 10-bit register
+Where V<sub>ref</sub> is the analog reference voltage, ADC is a 10-bit register
 value, and R is the resistance value of the second resistor (see R2 in
 figure 8).
 
@@ -263,10 +263,10 @@ for thermistors.
 
 <img src="Images/Temperature%20Calculation.jpg" width="500">
 
-Where, T is the measured temperature, T~0~ is the nominal temperature
+Where, T is the measured temperature, T<sub>0</sub> is the nominal temperature
 for the thermistor, B is the beta value for the thermistor,
-R~thermistor~ is the calculated value for the thermistors resistance,
-and R~0~ is the nominal resistance of the thermistor.
+R<sub>thermistor</sub> is the calculated value for the thermistors resistance,
+and R<sub>0</sub> is the nominal resistance of the thermistor.
 
 Once the temperature is calculated, the value will be converted into a
 string, and then sent via serial, as shown in figure 11, at a baud rate
