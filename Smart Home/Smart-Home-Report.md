@@ -1,4 +1,4 @@
-**Smart Home Secure++**
+#**Smart Home Secure++**
 
 **Milestone:** *Final Design Review*
 
@@ -12,7 +12,7 @@ May 6, 2019
 
 <hr>
 
-**Introduction and Project Objectives**
+<h3>Introduction and Project Objectives</h3>
 
 Our homes are more than just four walls and a roof, it\'s a place to
 feel safe and share memories with those we love. Accidents occur every
@@ -41,7 +41,7 @@ customizable as you'd like.
 
 <hr>
 
-**Methods/Technical Approach**
+<h3>Methods/Technical Approach</h3>
 
 *Specifications:* The high-level specifications for the Smart Home
 Secure++ are:
@@ -128,7 +128,7 @@ present.
 The sections below provide flow charts, circuit diagrams, and GUI
 layouts for the Smart Home Secure++.
 
-
+![](Block%20Diagram.jpg)
 
 *Figure 1 - Block diagram of the Smart Home Secure++*
 
