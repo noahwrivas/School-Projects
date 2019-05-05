@@ -123,12 +123,14 @@ alerts. Additionally, the analog smoke sensor voltage will be compared
 against a threshold voltage with a comparator to determine if smoke is
 present.
 
-**Detailed Design**
+<hr>
+
+<h3>Detailed Design</h3>
 
 The sections below provide flow charts, circuit diagrams, and GUI
 layouts for the Smart Home Secure++.
 
-![](Block%20Diagram.jpg)
+![](Images/Block%20Diagram.jpg)
 
 *Figure 1 - Block diagram of the Smart Home Secure++*
 
