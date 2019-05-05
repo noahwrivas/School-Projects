@@ -334,7 +334,7 @@ steady reference voltage. In addition to voltage stability, the
 simulation also provides power dissipation of the zener as shown in
 figure 15.
 
-<img src="Images/Regulator%20Sim.jpg">
+<img src="Images/Regulator%20Sim.jpg" width="700">
 
 <h4>Digital Results</h4>
 
