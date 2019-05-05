@@ -196,7 +196,7 @@ the switch closes and the signal goes high.
 
 *Figure 6 - Circuit diagram of an array of relays, and a reed switch*
 
-<img src="Images/Smoke%20sensor%20circuit.jpg" height="250">
+<img src="Images/Smoke%20Sensor%20Circuit.jpg" height="250">
 
 The smoke detection sensor will be implemented by using the LM339
 comparator, comparing the voltage coming out of the smoke sensor to a
