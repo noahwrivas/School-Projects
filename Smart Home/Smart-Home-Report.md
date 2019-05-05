@@ -365,7 +365,7 @@ vertical line with no curvature of the buzzer charging or discharging.
 This shows just how small the capacitance must be and how much noise is
 present.
 
-<img src="Images/buzzer%20Scope.jpg" height="400">
+<img src="Images/Buzzer%20Scope.jpg" height="400">
 
 The current limiting resistor for the buzzer has a value of 1kჲ and will
 draw no more than 3.3mA at 3.3V. Which means that the maximum power
