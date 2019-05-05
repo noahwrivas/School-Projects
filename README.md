@@ -2,7 +2,7 @@
 
 <h3>Purpose:</h3>
 
-<p>This repo is ment to share projects I have completed while currently attending school.</p>
+<p>This repo is meant to share projects I have completed while currently attending school.</p>
 
 <h3>Projects:</h3>
 
