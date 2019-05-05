@@ -1,6 +1,6 @@
-#Smart Home Secure++
+<h1>Smart Home Secure++</h1>
 
-**Milestone:** *Final Design Review*
+<h3>**Milestone:** *Final Design Review*
 
 **Noah Rivas, Christian Arévalo, David Bone, Abeden El Kintaoui**
 
@@ -9,7 +9,7 @@ ECE 387
 Spring 2019
 
 May 6, 2019
-
+</h3>
 <hr>
 
 <h3>Introduction and Project Objectives</h3>
