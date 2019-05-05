@@ -27,4 +27,4 @@
   
 Our professor also required that we include various components, these included Digital and Analog Components, an Interface to a Microcontroller or MicroProcessor, and a form of Signal Processing.
 
-There is a lot to say about this project, an entire report has been writen about it which you can read more about <a href="#">here</a>.</p>
+There is a lot to say about this project, an entire report has been writen about it which you can read more about <a href="https://github.com/noahwrivas/School-Projects/blob/master/Smart%20Home/Smart-Home-Report.md">here</a>.</p>
