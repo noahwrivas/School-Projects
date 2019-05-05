@@ -162,8 +162,9 @@ sensor circuit.
 The primary microcomputer will handle menu navigation based on touch
 input from the user. In figure 4, the graphical user interface (GUI) is
 shown. Each menu item displays data to the user or acquires data from
-the user. ![](media/image17.png){width="6.5in"
-height="7.972222222222222in"}
+the user. 
+
+<img src="Images/Menu%20Navigation.jpg" height="500">
 
 The output devices will be controlled via binary signals. The buzzer
 will receive a square wave with a certain tone pertaining to each state:
@@ -173,7 +174,8 @@ buzzer in parallel with a resistor at the source as seen in figure 5.
 According to the buzzer's datasheet, the buzzer may be modelled as a
 capacitor. The resistor in parallel with the buzzer is essential for
 charging and discharging the piezo buzzer.
-![](media/image15.png){width="2.8229166666666665in" height="2.375in"}
+
+<img src="Images/Buzzer%20Driver%20Circuit.jpg" height="200">
 
 The two electromechanical relays, shown in figure 6, will be controlled
 via 1-bit signals from the primary microcomputer. The relays have
@@ -190,12 +192,11 @@ pull-down resistor is used to bring the signal to ground when the reed
 switch is open. When a magnetic field is introduced to the reed switch,
 the switch closes and the signal goes high.
 
-![](media/image12.png){width="5.612376421697288in" height="3.0in"}
+<img src="Images/relays.jpg" height="250">
 
 > *Figure 6 - Circuit diagram of an array of relays, and a reed switch*
 
-<h4>Analog Design</h4> ![](media/image7.png){width="4.208333333333333in"
-height="3.25in"}
+<img src="Images/Smoke sensor circuit.jpg" height="250">
 
 The smoke detection sensor will be implemented by using the LM339
 comparator, comparing the voltage coming out of the smoke sensor to a
@@ -220,16 +221,15 @@ to reference and a zener regulator with a capacitor to minimize any
 noise from our Vcc. The thermistor will change the voltage across itself
 depending on its temperature. This voltage is then sent to an ADC to be
 analyzed as explained later in signal
-processing.![](media/image21.png){width="3.6979166666666665in"
-height="2.0833333333333335in"}
+processing.
 
-*Figure 8 - Circuit diagram consisting of a*
+<img src="Images/Regulator.png" height="250">
 
-*thermistor and voltage regulator.*
+*Figure 8 - Circuit diagram consisting of a thermistor and voltage regulator.*
 
-<h4>Interface to
-Microcomputer</h4>![](media/image13.png){width="4.687696850393701in"
-height="4.527777777777778in"}
+<h4>Interface to Microcontroller</h4>
+ 
+<img src="Images/Raspberry%20Pi%203B+.jpg" height="350">
 
 In figure 9 the schematic for the primary microcomputer, Raspberry Pi
 3B+ is shown as well as its pin assignments and connections the door
@@ -239,8 +239,7 @@ the BCM2835 chipset. The BCM2835 provides peripheral functions to the
 ARM processor on the Pi, such as an interrupt controller, PWM, USB,
 timers, UART (serial), and other peripherals not used in this project .
 
-![](media/image6.png){width="4.140625546806649in"
-height="2.623203193350831in"}
+<img src="Images/ATTiny.jpg" height="250">
 
 In figure 10, the secondary microcontroller, ATtiny85 is shown with its
 pin assignments, connections to the temperature sensor, voltage
@@ -255,8 +254,7 @@ register. The 10-bit value will be converted into a voltage using the
 voltage divider principle. Then, the resistance value of the thermistor
 will be determined with the following formula:
 
-![](media/image10.png){width="2.4843755468066493in"
-height="1.0270603674540681in"}
+<img src="Images/RThermistor.jpg" width="500">
 
 Where V~ref~ is the analog reference voltage, ADC is a 10-bit register
 value, and R is the resistance value of the second resistor (see R2 in
@@ -265,8 +263,7 @@ figure 8).
 Next, temperature is found using the simplified Steinhart--Hart equation
 for thermistors.
 
-![](media/image14.png){width="2.5541666666666667in"
-height="0.7817300962379703in"}
+<img src="Images/Temperature%20Calculation.jpg" width="500"
 
 Where, T is the measured temperature, T~0~ is the nominal temperature
 for the thermistor, B is the beta value for the thermistor,
@@ -277,7 +274,8 @@ Once the temperature is calculated, the value will be converted into a
 string, and then sent via serial, as shown in figure 11, at a baud rate
 of 9600 bps. The primary microcomputer will log the temperature with a
 timestamp, and update the graph for displaying to user.
-![](media/image18.png){width="4.65625in" height="3.5972222222222223in"}
+
+<img src="Images/Polling%20Serial_Temperature%20Processing%20Scheme.jpg" height="550">
 
 Meanwhile, the smoke sensor will be continuously outputting a voltage to
 the comparator, if the value exceeds the threshold, a high signal (3.3V)
@@ -294,10 +292,11 @@ buzzer will beep periodically until the correct passcode is entered
 (disarmed). If the device is armed, the door opens, and the passcode is
 not entered correctly or within a certain time constraint, the security
 alarm will sound. Lastly, the smoke alarm will sound if the smoke detect
-bit is set high. ![](media/image4.png){width="4.229166666666667in"
-height="3.6527777777777777in"}
+bit is set high. 
 
-![](media/image8.png){width="4.65625in" height="5.583333333333333in"}
+<img src="Images/Buzzer%20Flow%20Chart.jpg">
+
+<img src="Images/Security%20Alarm%20Flow%20Chart.jpg" height="500">
 
 A WiFi network connection will be configured using the Raspberry Pi's
 network adapter. A weather data API will be invoked periodically with a
@@ -305,8 +304,8 @@ local zip code. The API will respond with a text file containing local
 weather data. The data is parsed, and only the daily HI/LO temperature,
 current temperature, and current weather conditions will be displayed to
 the user. Figure 13 shows a detailed flowchart of the Web API.
-![](media/image3.png){width="5.291666666666667in"
-height="3.4583333333333335in"}
+
+<img src="Images/Web%20API%20Flow%20Chart.jpg"
 
 <hr>
 
@@ -314,8 +313,7 @@ height="3.4583333333333335in"}
 
 Results are shown for each of the following sections: analog, digital,
 interface to microcontroller, and signal
-processing.![](media/image19.png){width="5.333333333333333in"
-height="3.6666666666666665in"}
+processing.
 
 <h4>Analog Results</h4>
 
@@ -328,6 +326,8 @@ configured as a ramp wave with 2.0 Vpp at 1 Hz. The output is shown
 using a simulated oscilloscope. It was found that when the smoke sensor
 exceeds the threshold, the output voltage goes high (3.3 Volts).
 
+<img src="Images/Comparator%20Sim.jpg">
+
 Another simulation was performed to examine the response of the zener
 voltage regulator during different load conditions as temperature
 changes. The largest load would be when the thermistor goes to zero,
@@ -337,7 +337,7 @@ simulation also provides power dissipation of the zener as shown in
 figure 15. ![](media/image9.png){width="4.919992344706912in"
 height="3.088542213473316in"}
 
-<h4>Digital Results:</h4>
+<img src="Images/Regulator%20Sim.jpg">
 
 The buzzer circuit that was drawn in figure 5 shows how the buzzer acts
 as a capacitor. This means that the buzzer will have some value for its
@@ -349,8 +349,9 @@ capacitance is so low and the resistance is also relatively low, the
 time constant which determines the time needed to charge and discharge
 is also going to be extremely low, allowing for much higher frequencies
 that the primary microcontroller cannot
-supply.![](media/image2.png){width="3.8854166666666665in"
-height="4.104166666666667in"}
+supply.
+
+<img src="Images/buzzer%20Scope.jpg" height="250">
 
 The reed switch will interact with the magnet on the door and creates a
 short connecting to the microcontroller as well as a pulldown resistor.
@@ -367,6 +368,8 @@ vertical line with no curvature of the buzzer charging or discharging.
 This shows just how small the capacitance must be and how much noise is
 present.
 
+<img src="Images/buzzer%20Scope.jpg" height="250">
+
 The current limiting resistor for the buzzer has a value of 1kჲ and will
 draw no more than 3.3mA at 3.3V. Which means that the maximum power
 dissipation across resistor will not exceed 10.8mW. The buzzer is
@@ -380,14 +383,14 @@ voltage across the resistor is 5V and the maximum current is 5mA.
 Therefore the power dissipated would be 25mW. The total power
 consumption of the entire buzzer circuit will be a safe 175mW.
 
-<h4>Interface to Microcontroller</h4>
-Results*![](media/image20.png){width="3.46875in"
-height="2.5694444444444446in"}
+<h4>Interface to Microcontroller Results</h4>
 
 To interface the Raspberry Pi, a perforated bare circuit board was
 soldered with the appropriate connections to form a "hat" for the
 Raspberry Pi, as shown in image 1. On this circuit, the ATtiny is also
 interfaced with its appropriate connections.
+
+<img src="Images/perfboard.jpg" height="250">
 
 Raspberry Pi 3B+ documentation suggests the max current drawn
 simultaneously from all the GPIO should be under 50 mA for safe
@@ -404,19 +407,7 @@ consumes about 500 mA.
 The following table shows a summary of the rated and designed currents
 in our design
 
-  **Raspberry Pi Pin**   **Purpose**               **Maximum rated output current**   **Maximum designed current**
-  ---------------------- ------------------------- ---------------------------------- ------------------------------
-  **5V**                 5 Volt power              2.0 A (power supply)               \~5 mA
-  **3.3V**               3.3 Volt power            500 mA                             1.77 mA
-  **BCM7**               Smoke interrupt (input)   16 mA                              \-
-  **BCM8**               Door reading (input)      16 mA                              \-
-  **BCM14**              Serial transmit           16 mA                              0
-  **BCM15**              Serial receive            16 mA                              0
-  **BCM18**              Buzzer                    16 mA                              0.33 mA
-  **BCM23**              Relay 1                   16 mA                              1.9 mA
-  **BCM24**              Relay 2                   16 mA                              1.9 mA
-  **USB**                Touchscreen               1.2 A                              1 A
-  **HDMI**               LCD video signal          50 mA                              50 mA
+<img src="Images/Power%20Table.jpg" width="600">
 
 *Table 1 -* Rated and designed current specifications for pins used in
 the Smart Home Secure++ system on the Raspberry Pi 3B+.
@@ -445,7 +436,8 @@ where it is time stamped and stored to the SD card in a ".csv" file. The
 ".csv" is then used to draw a graph of temperature versus time. The file
 is updated in real time allowing the graph to update as more temperature
 data points are added, refer to screenshot 2.
-![](media/image5.png){width="5.03125in" height="3.0972222222222223in"}
+
+<img src="Images/temp%20plot.jpg" height="250">
 
 In addition to storing temperature data, user preferences and setting
 are saved in a ".json" file on the SD card. Preferences such as:
@@ -459,19 +451,8 @@ the ".json" file directly.
 
 <h3>Lessons Learned</h3>
 
--   **Planning:** Although, we had a good plan to stay on track and meet
-    > deadlines, we did have some unforeseen delays. Our Zener diodes
-    > were ordered through Digikey through the colleges accounts. For a
-    > while, the order was made and even sent to campus, but was not
-    > delivered to us. Fortunately, our design did not depend on the
-    > zener, and we were able to continue with no issues.
+-   **Planning:** Although, we had a good plan to stay on track and meet deadlines, we did have some unforeseen delays. Our Zener diodes were ordered through Digikey through the colleges accounts. For a while, the order was made and even sent to campus, but was not delivered to us. Fortunately, our design did not depend on the zener, and we were able to continue with no issues.
 
--   **Team work:** We have learned to combine our knowledge and overcome
-    > the learning curve to bring the project to fruition. Dividing
-    > tasks into our individual skill sets was a necessity. As a team,
-    > we had two set meeting times outside of class period each week. At
-    > these meetings we discussed what needed to be done that week and
-    > how we would accomplish our goals.
+-   **Team work:** We have learned to combine our knowledge and overcome the learning curve to bring the project to fruition. Dividing tasks into our individual skill sets was a necessity. As a team, we had two set meeting times outside of class period each week. At these meetings we discussed what needed to be done that week and how we would accomplish our goals.
 
-> Overall, each member worked very hard throughout this semester, and we
-> are all very pleased with the project we created.
+Overall, each member worked very hard throughout this semester, and we are all very pleased with the project we created.
